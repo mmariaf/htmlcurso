@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno Virtual: Introdução ao HTML</title>
+</head>
+<body>
+    
+    <h1>Caderno Virtual</h1>
+    <h2>Introdução ao HTML</h2>
+    <h3>Índice</h3>
+    <ol>
+        <li><a href="#estrutura-basica">A Estrutura Básica do HTML</a>
+            <ol>
+                <li><a href="#tag-html">Tag HTML</a></li>
+                <li><a href="#tag-head">Tag Head</a></li>
+                <li><a href="#tag-body">Tag Body</a></li>
+                <li><a href="#doctype">Instrução !DOCTYPE</a></li>
+            </ol>
+        </li>
+        <li><a href="#atributos">Atributos</a></li>
+        <li><a href="#tags-texto">Tags Específicas para Textos</a>
+            <ol>
+                <li><a href="#tag-p">Tag p: Criando Parágrafos</a></li>
+                <li><a href="#tag-h">Tag h1 - h6: Criando Cabeçalhos</a></li>
+                <li><a href="#tag-bq">Tag blockquote: Criando Citações</a></li>
+                <li><a href="#tag-strong">Tag strong: Negrito</a></li>
+                <li><a href="#tag-em">Tag em: Ênfase</a></li>
+                <li><a href="#tag-underline">Tag u: Sublinhado</a></li>
+                <li><a href="#tag-italico">Tag i: Itálico</a></li>
+                <li><a href="#tag-mark">Tag mark: Marca-Texto</a></li>
+                <li><a href="#tag-subsup">Tag sup e Tag sub: Texto na Parte Superior e Inferior da Linha</a></li>
+            </ol>
+        </li>
+        <li><a href="#tags-listas">Tags para Listas</a></li>
+        <li><a href="#tags-links">Tags para Links e seus Atributos</a></li>
+    </ol>
+    <br><br>
+
+    <h3 id="estrutura-basica">A Estrutura Básica do HTML</h3>
+    <p>Um documento HTML válido precisa seguir obrigatoriamente a estrutura composta pelas tags <strong>html</strong>, <strong>head</strong> e <strong>body</strong> e a instrução <strong>!DOCTYPE</strong>. Esta estrutura está informada em uma documentação que descreve todos os detalhes do HTML, no caso as tags e atributos, e como os navegadores devem considerar e interpretar estas tags, esta documentação é chamada de "especificação do HTML", e através do que está declarado nela que é possível entender se um documento HTML válido. Um documento HTML inválido é carregado pelo navegador, porém em um "modo de compatibilidade", vamos entender melhor sobre isto logo mais.</p>
+    <p>Abaixo, vamos conhecer em detalhes cada uma das tags estruturais obrigatórias:</p>
+
+    <h4 id="tag-html">Tag HTML</h4>
+    <p>A tag &lt;html&gt; é uma das tags fundamentais do HTML (HyperText Markup Language), que é a linguagem de marcação padrão para a criação de páginas da web. Essa tag é usada para definir o início e o fim de um documento HTML.</p>
+    <p>A tag &lt;html&gt; geralmente é a primeira tag em um documento HTML e é usada para delimitar todo o conteúdo da página. Todas as outras tags HTML devem ser colocadas dentro da tag &lt;html&gt;.</p>
+    <p>A tag &lt;html&gt; também pode conter um atributo "lang" que especifica o idioma principal do conteúdo da página. Isso é importante para garantir que os navegadores e outros sistemas de software possam exibir o conteúdo corretamente para usuários de diferentes idiomas.</p>
+    <br>
+
+    <h4 id="tag-head">Tag Head</h4>
+    <p>A tag &lt;head&gt; do HTML é usada para definir informações sobre a página, como seu título, links para folhas de estilo CSS e meta-informações que descrevem a página para os motores de busca e outros sistemas que acessam o conteúdo da web. O conteúdo dentro da tag &lt;head&gt; não é visível para os usuários que acessam a página, mas é usado por navegadores da web e outros sistemas para determinar como exibir e acessar o conteúdo da página.</p>
+    <p>A tag &lt;head&gt; é uma tag de contêiner e é geralmente colocada logo após a tag &lt;html&gt; de abertura e antes da tag &lt;body&gt; que contém o conteúdo da página. O conteúdo dentro da tag &lt;head&gt; não é visível para os usuários que acessam a página, mas é usado por navegadores da web e outros sistemas para determinar como exibir e acessar o conteúdo da página.</p>
+    <p>Alguns dos elementos mais comuns que podem ser incluídos dentro da tag &lt;head&lt; incluem:</p>
+    <ul>
+        <li><strong>&lt;title&gt;:</strong> define o título da página, que é exibido na barra de título do navegador.</li>
+        <li><strong>&lt;meta&gt;:</strong> define metadados que descrevem a página, como a descrição da página, as palavras-chave usadas na página e informações sobre o autor da página.</li>
+        <li><strong>&lt;link&gt;:</strong> define links para arquivos externos, como folhas de estilo CSS e arquivos de ícone.</li>
+        <li><strong>&lt;script&gt;:</strong> define scripts JavaScript que são executados na página.</li>
+    </ul>
+    <br>
+
+    <h4 id="tag-body">Tag Body</h5>
+    <p>A tag &lt;body&gt; é uma das principais tags do HTML (HyperText Markup Language), que é usada para definir o conteúdo visível da página da web. Todos os elementos da página que devem ser exibidos no navegador da web devem estar contidos dentro da tag &lt;body&gt;. Isso pode incluir texto, imagens, vídeos, formulários e muitos outros tipos de conteúdo. A tag &lt;body&gt; também pode conter atributos que controlam a aparência e o comportamento do conteúdo da página, como a cor de fundo da página, a cor do texto e as funções de rolagem.</p>
+    <br>
+    <h4 id="doctype">Declaração !DOCTYPE</h5>
+    <p>A instrução &lt;!DOCTYPE&gt; é uma declaração que informa ao navegador da web qual versão do HTML está sendo usada no documento. É geralmente a primeira linha do documento HTML e é seguida pela tag &lt;html&gt;. O &lt;!DOCTYPE&gt; não é uma tag HTML, mas sim uma declaração que ajuda o navegador a interpretar o código HTML corretamente. A declaração &lt;!DOCTYPE&gt; é importante porque diferentes versões do HTML têm sintaxe e recursos diferentes, portanto, o navegador precisa saber qual versão está sendo usada para renderizar a página corretamente. Além disso, algumas versões mais antigas do Internet Explorer podem ter problemas de compatibilidade com a versão mais recente do HTML, por isso é importante especificar a declaração &lt;!DOCTYPE&gt; para garantir a renderização correta da página em todos os navegadores.</p>
+    
+    <br><br>
+    <h3 id="atributos">Atributos</h3>
+    <p>Atributos do HTML são recursos adicionais que podem ser adicionados às tags HTML para fornecer informações extras sobre como o conteúdo deve ser exibido ou comportar-se na página. Cada tag HTML pode ter vários atributos, e esses atributos variam dependendo da tag. Por exemplo, a tag &lt;img&gt; tem o atributo "src" para especificar a localização da imagem, enquanto a tag &lt;a&gt; tem o atributo "href" para especificar o URL do link.</p>
+    <p>Existem alguns atributos HTML genéricos que podem ser adicionados a qualquer tag HTML, independentemente do seu tipo ou função específica. Aqui estão alguns exemplos de atributos genéricos do HTML:</p>
+    <ul>
+        <li><strong>class</strong> - permite que você defina um ou mais nomes de classe CSS para uma tag, que pode ser usada para aplicar estilos específicos a essa tag.</li>
+        <li><strong>id</strong> - permite que você atribua um identificador exclusivo a uma tag HTML, o que pode ser útil para identificar essa tag para fins de estilização ou manipulação com JavaScript.</li>
+        <li><strong>style</strong> - permite que você defina estilos CSS diretamente em uma tag HTML, em vez de usar uma folha de estilo externa ou incorporada.</li>
+        <li><strong>title</strong> - permite que você adicione um título descritivo a uma tag HTML, que pode ser exibido como uma dica de ferramenta quando o usuário passa o cursor sobre a tag.</li>
+        <li><strong>data-*</strong> - permite que você crie seus próprios atributos personalizados começando com o prefixo "data-", que podem ser usados para armazenar informações adicionais sobre um elemento para uso em JavaScript ou CSS.</li>
+    </ul>
+    <br><br>
+    
+    <h3 id="tags-texto">Tags Específicas para Textos</h3>
+    <p>Existem algumas tags HTML específicas para o texto que são usadas para fornecer formatação e estruturação adicionais ao conteúdo textual em uma página da web. Aqui estão alguns exemplos:</p>
+
+    <br>
+    <h4 id="tag-p">Tag p: Criando Parágrafos</h4>
+    <p>A tag &lt;p&gt; é usada para definir parágrafos de texto. Qualquer texto dentro dessa tag será tratado como um bloco de parágrafo, com um espaçamento vertical adicional acima e abaixo do texto.</p>
+    <h5>Exemplo:</h5>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, ex! Amet iste doloribus, perferendis quas dolorem asperiores labore ab? Id magnam temporibus nihil architecto! Sunt perferendis quam impedit repellendus qui.</p>
+    <br>
+
+    <h4 id="tag-h">Tag h1 - h6: Criando Cabeçalhos</h4>
+    <p>Essas tags são usadas para definir os cabeçalhos de uma página. h1 é o maior e mais importante, e h6 é o menor e menos importante. Eles podem ser usados para criar uma hierarquia clara de seções e subseções em uma página.</p>
+    <h5>Exemplo:</h5>
+    <h1>Cabeçalho 1</h1>
+    <h2>Cabeçalho 2</h2>
+    <h3>Cabeçalho 3</h3>
+    <h4>Cabeçalho 4</h4>
+    <h5>Cabeçalho 5</h5>
+    <h6>Cabeçalho 6</h6>
+    <br>
+
+    <h4 id="tag-bq">Tag blockquote: Criando Citações</h4>
+    <p>A tag blockquote é uma tag HTML usada para citar um trecho de texto de outra fonte em um documento HTML. Ela é frequentemente usada para citar texto de outras publicações, como artigos de notícias, livros e revistas. O navegador normalmente exibe o texto dentro de uma tag blockquote com uma formatação de recuo, para destacá-lo do restante do texto. Além disso, muitas vezes a tag cite é usada dentro de uma tag blockquote para fornecer informações sobre a fonte do texto citado, como o autor e a publicação original. Isso pode ajudar os leitores a verificar a precisão da citação e a encontrar a fonte original do texto, se desejado.</p>
+    <h5>Exemplo:</h5>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aut porro beatae deleniti quo modi quam rem consequatur id, quasi eos, inventore nihil a ad obcaecati, dicta laborum ipsa fugiat!</blockquote>
+    <br>
+
+    <h4 id="tag-strong">Tag strong: Negrito</h4>
+    <p>A tag strong é uma tag HTML que é usada para enfatizar o texto de uma maneira mais forte do que a tag em. Ela indica que o texto deve ser exibido em negrito. Embora a tag strong seja frequentemente usada para enfatizar palavras ou frases importantes em um texto, é importante notar que a tag strong não deve ser usada apenas para tornar o texto mais visível ou atraente visualmente. A tag strong deve ser usada apenas para destacar o significado ou importância do texto. Por exemplo, ela pode ser usada para enfatizar uma palavra-chave em uma frase ou para destacar uma frase que é particularmente importante para o significado geral de um texto.</p>
+    <h5>Exemplo:</h5>
+    <p><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto suscipit iste id maiores, facere dolor accusamus quasi, perspiciatis fugiat voluptates minima, dolorem veniam nostrum possimus. Deserunt praesentium cum ut porro.</strong></p>
+    <br>
+
+    <h4 id="tag-em">Tag em: Ênfase</h4>
+    <p>A tag 'em' é usada para enfatizar o texto em um documento HTML. Geralmente, os navegadores exibem o texto dentro da tag 'em' em itálico, embora isso possa ser modificado por meio de CSS. A ênfase do texto dentro da tag 'em' é importante para a compreensão do significado da frase ou sentença. Por exemplo, em um texto que discute a importância da saúde mental, a palavra "saúde" pode ser enfatizada usando a tag 'em' para destacar sua relevância para o tema em questão. Além de fornecer ênfase, a tag 'em' também é usada por tecnologias assistivas, como leitores de tela, para ajudar a identificar o conteúdo mais importante em uma página da web.</p>
+    <h5>Exemplo:</h5>
+    <p><em>Lorem ipsum dolor sit amet</em> consectetur, adipisicing elit. Rem vitae, voluptas voluptatibus hic, dignissimos culpa neque numquam distinctio similique quisquam pariatur? Nostrum rem corrupti fugiat et distinctio quia repudiandae fuga?</p>
+    <br>
+
+    <h4 id="tag-underline">Tag u: Sublinhado</h4>
+    <p>A tag 'u' é usada para criar texto sublinhado em um documento HTML. Embora seja menos comum do que era no passado, ainda pode ser usado para fornecer ênfase ou destacar informações importantes. Por exemplo, em um documento de pesquisa, uma palavra ou frase que precise ser destacada pode ser sublinhada usando a tag 'u'. No entanto, é importante notar que o uso excessivo de texto sublinhado pode tornar a leitura do conteúdo mais difícil e pode prejudicar a acessibilidade para pessoas com deficiência visual. Como alternativa, pode-se usar a tag 'em' para enfatizar o texto, ou a formatação CSS, como negrito ou itálico, para destacar informações importantes.</p>
+    <h5>Exemplo:</h5>
+    <p><u>Lorem ipsum dolor, sit amet</u> consectetur adipisicing elit. Doloribus, corporis esse. Sint provident tenetur earum eos nemo doloremque consequuntur beatae mollitia dolore aut necessitatibus repellat, ipsam unde quam nam corporis?</p>
+    <br>
+
+    <h4 id="tag-italico">Tag I: Itálico</h4>
+    <p>A tag i é uma tag HTML que é usada para enfatizar o texto de uma maneira diferente da tag strong. Ela indica que o texto deve ser exibido em itálico. Embora a tag i seja frequentemente usada para enfatizar palavras ou frases em um texto, é importante notar que ela não deve ser usada apenas para tornar o texto mais visível ou atraente visualmente. A tag i deve ser usada apenas para destacar o significado ou importância do texto de uma maneira sutil. Por exemplo, ela pode ser usada para indicar um termo técnico em um texto ou para enfatizar uma palavra que é usada em um contexto incomum.</p>
+    <h5>Exemplo:</h5>
+    <p><i>Lorem ipsum dolor sit amet </i>consectetur adipisicing elit. Minima accusantium incidunt aliquam officiis saepe vel voluptas, ab quisquam amet voluptatem dolor magnam autem eaque fugiat nobis accusamus nemo! A, sit?</p>
+    <br>
+
+    <h4 id="tag-mark">Tag Mark: Marca-Texto</h4>
+    <p>A tag 'mark' é usada para destacar um trecho de texto em um documento HTML. Ela permite que um trecho de texto seja destacado com uma cor de fundo diferente do restante do texto, tornando-o mais fácil de ser notado. A tag 'mark' é útil para indicar termos importantes em um texto, como palavras-chave ou frases relevantes, ou para destacar citações importantes em um artigo. É importante lembrar que o uso excessivo de 'mark' pode tornar o conteúdo confuso e prejudicar a legibilidade e acessibilidade do texto, portanto, deve ser usado com moderação.</p>
+    <h5>Exemplo:</h5>
+    <p><mark>Lorem ipsum dolor sit amet </mark>consectetur adipisicing elit. Ipsam obcaecati iure ipsa, voluptate, sint unde corrupti consequuntur, sequi iusto harum dolores! Maxime suscipit nulla hic unde ipsam, voluptatibus modi esse.</p>
+    <br>
+
+    <h4 id="tag-subsup">Tag sup e Tag sub: Texto na Parte Superior e Inferior da Linha</h4>
+    <p>As tags HTML 'sup' e 'sub' são usadas para criar texto sobrescrito e subscrito, respectivamente.</p>
+    <p>A tag 'sup' é usada para criar texto sobrescrito. Isso é comumente usado para exibir expoentes em fórmulas matemáticas ou químicas. Por exemplo, a equação "2^3" seria escrita em HTML como "2<sup>3</sup>" e seria exibida como "23" com o "3" sendo sobrescrito.</p>
+    <p>A tag 'sub', por outro lado, é usada para criar texto subscrito. Isso é comumente usado para exibir índices em fórmulas matemáticas ou químicas, ou para exibir números de série em química e biologia. Por exemplo, o número de série de uma molécula de água, H2O, seria escrito em HTML como "H<sub>2</sub>O" e seria exibido com o "2" sendo subscrito.</p>
+    <h5>Exemplo:</h5>
+    <p>Lorem<sup>ipsum</sup> dolor <sub>sit</sub> amet consectetur adipisicing elit. Cumque inventore provident soluta porro iure voluptatibus fuga dolorem! Voluptas enim perferendis minus fuga, impedit laudantium quasi laborum necessitatibus pariatur similique tempora!</p>
+    <br><br>
+
+    <h3 id="tags-listas">Tags para Listas</h3>
+    <p>Aqui estão algumas das principais tags HTML para listas:</p>
+    <ul>
+        <li><strong>'ul'</strong>: é a tag para uma lista não ordenada (unordered list). É usada para criar uma lista de itens que não seguem uma ordem específica. Cada item da lista é marcado com a tag 'li' (list item).</li>
+        <li><strong>'ol'</strong>: é a tag para uma lista ordenada (ordered list). É usada para criar uma lista de itens que seguem uma ordem específica, geralmente numerada. Cada item da lista é marcado com a tag 'li'.</li>
+        <li><strong>'dl'</strong>: é a tag para uma lista de definição (definition list). É usada para criar uma lista de termos e suas definições correspondentes. Cada termo é marcado com a tag 'dt' (definition term), e cada definição é marcada com a tag 'dd' (definition description).</li>
+    </ul>
+    <br><br>
+
+    <h3 id="tags-links">Tags para Links e seus Atributos</h3>
+    <p>A tag 'a' é uma das tags mais importantes do HTML, pois é usada para criar links entre páginas da web ou para outras partes do mesmo documento. O elemento 'a' é usado com o atributo href para especificar o URL do documento ou recurso que o link levará o usuário quando clicado.</p>
+    <p>Por exemplo, o seguinte código HTML cria um link para a página inicial do Google:</p>
+    <a href="https://www.google.com">Ir para o Google</a>
+    <p>Além do atributo href, a tag 'a' também pode ter outros atributos, como:</p>
+    <ul>
+        <li><strong>'target'</strong>: especifica onde o recurso será aberto quando o link for clicado.
+            <ul>
+                <li><strong>_blank</strong>: Abre o link em uma nova janela/tab do navegador.</li>
+                <li><strong>_self</strong>: Abre o link na mesma janela/tab do navegador.</li>
+                <li><strong>_parent</strong>: Abre o link no frame "pai", caso exista.</li>
+                <li><strong>_top</strong>: Abre o link no topo da janela/tab do navegador, substituindo todas as frames, caso existam.</li>
+            </ul>
+        </li>
+        <li><strong>'title'</strong>: fornece informações adicionais sobre o link, como uma descrição ou título.</li>
+        <li><strong>'rel'</strong>: especifica o relacionamento entre o documento atual e o documento vinculado pelo link. Por exemplo, "nofollow" informa aos mecanismos de pesquisa para não seguir o link.</li>
+    </ul>
+    <br><br>
+
+</body>
+</html>
